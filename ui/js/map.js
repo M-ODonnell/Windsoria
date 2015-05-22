@@ -18,12 +18,17 @@ $(document).ready(function(){
         greyhound = L.marker([42.317328, -83.044252]).bindPopup('Greyhound'),
         ford = L.marker([42.318661, -82.993526]).bindPopup('Ford'),
         chrysler = L.marker([42.297333, -82.986574]).bindPopup('Chrysler');
+    var lanspeary = L.marker([42.310188, -83.015113]).bindPopup('Lanspeary Park</br>2012</br>Acquired a lilac tree in the early morning.</br>Planted it two years later.'),
+        artcite = L.marker([42.317162, -83.040213]).bindPopup('Winds[t]oria</br>2015-05-22</br>Mapping our city of desire.'),
+        sorry = L.marker([42.316081, -83.045069]).bindPopup('This street corner.</br>2003</br>Turbulence.</br>I am sorry.');
     var go = L.layerGroup([viaRail, greyhound]),
-        labour = L.layerGroup([ford, chrysler]);
+        labour = L.layerGroup([ford, chrysler]),
+        entryExamples = L.layerGroup([lanspeary, artcite, sorry]);
     var overlays = {
         "Green": green,
         "Go": go,
-        "Labour": labour
+        "Labour": labour,
+        "Examples": entryExamples
     };
     L.control.layers(null, overlays).addTo(map);
 
