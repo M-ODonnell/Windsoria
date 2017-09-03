@@ -1,12 +1,23 @@
 $(document).ready(function(){
     $("#map").hide();
+    $('#about').hide();
     $("a[href='#1']").hide();
 
     $("a[href='#1']").on('click', function(){
         $("#mapImg").show();
         $("#map").hide();
         $("a[href='#1']").hide();
+        $("a[href='#2']").show();
+        $('#about').hide();
 
+    });
+
+    $("a[href='#2']").on('click', function() {
+        $("#map").hide();
+        $("#mapImg").hide();
+        $('#about').show();
+        $("a[href='#2']").hide();
+        $("a[href='#1']").show();
     });
 
     // initialize map
