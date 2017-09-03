@@ -1,0 +1,59 @@
+body {
+	font-family: 'Merriweather', serif;
+}
+
+h1 {
+	font-size: 2em;
+	padding: 2%;
+    background-color: white;
+}
+
+nav {
+    background-color: white;
+    height: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 #back:hover {
+    color: rgba(0,0,0,1);
+    border: 1px solid black;
+}
+
+#main {
+	text-align: center;
+	width: 100%;
+	margin: auto;
+    background-color: #FFF8CC;
+}
+
+#map {
+	height: 600px;
+}
+ /*styles for introduction map*/
+div #mapImg {
+    background-image: url("../../images/WindsorOntario1913GundyandGundyPropertyMap.jpg");
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 992px;
+    margin: auto;
+}
+
+#mapImg table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+
+#mapImg table td {
+    border: 1px solid #999999;
+    transition: background-color, .3s, ease;
+}
+
+#mapImg table td:hover {
+    background-color: rgba(9,9,9,0.2);
+}
+/*end introduction map styles*/

@@ -11,15 +11,6 @@ $(document).ready(function(){
 
     // initialize map
     var map = L.map("map");
-    // mock data to present different layer choices
-        var willisteadPark = L.marker([42.318694, -83.010447]).bindPopup('Willistead Park'),
-        uAvePark = L.marker([42.321914, -83.023215]).bindPopup('University Ave. Park'),
-        cadillacStPark = L.marker([42.324992, -83.001692]).bindPopup('Cadillac St. Park');
-        var green = L.layerGroup([willisteadPark, uAvePark, cadillacStPark]);
-        var overlays = {
-            "Green": green
-        };
-        L.control.layers(null, overlays).addTo(map);
 
     $('td').on('click', function(){
         $("#mapImg").hide();
